@@ -1,3 +1,3 @@
 ---
-layout: v1
+layout: vertical
 ---
