@@ -1,0 +1,33 @@
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  {% assign cachedz = site.time | date: '%M%S' %}
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  
+    <!-- Title -->
+    <title>arhouse.tv</title>
+
+  
+
+  </head>
+</head>
+
+    <body>
+        <iframe
+    src="https://player.twitch.tv/?arhousetv&parent=arhouse.tv"
+    height="300"
+    width="400"
+    allowfullscreen>
+</iframe>
+    </body>
+
+</html>
