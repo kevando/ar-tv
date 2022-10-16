@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+$silver: #ccc;
+$color-bg: #ddd;
+$black: black;
+
+body {
+	background-color: yellow;
+}
