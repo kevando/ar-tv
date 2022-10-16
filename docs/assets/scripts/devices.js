@@ -1,1 +1,8 @@
-// alert("sadf")
+
+
+
+var UsersReality = function() {
+
+
+    return this;
+}
