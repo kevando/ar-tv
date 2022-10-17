@@ -1,0 +1,41 @@
+
+/* ----------- PHONES ------------- */
+
+@mixin for-phone($orientation: both) {
+
+	@if $orientation==both {
+		@media only screen and (min-device-width: 375px) and (max-device-width: 768px) {
+			@content;
+		}
+	}
+	@else {
+		@media only screen and (min-device-width: 375px) and (max-device-width: 768px) and (orientation: $orientation) {
+			@content;
+		}
+	}
+
+}
+
+/* ----------- TABLETS ------------ */
+
+@mixin for-tablet($orientation: both) {
+
+	@if $orientation==both {
+		@media only screen and (min-width: 768px) {
+			@content;
+		}
+	}
+	@else {
+		@media only screen and (min-width: 768px) and (orientation: $orientation) {
+			@content;
+		}
+	}
+	
+}
+/* ----------- DESKTOP ------------ */
+
+@mixin for-desktop() {
+	@media only screen and (min-width: 992px) {
+		@content;
+	}
+}

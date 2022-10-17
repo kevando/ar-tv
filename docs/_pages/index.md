@@ -1,5 +1,5 @@
 ---
-layout: october-2022
+layout: responsive-tv
 permalink: /
-title: ARHOUSE TV
+title: AR TV
 ---

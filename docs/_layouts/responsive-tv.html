@@ -1,0 +1,26 @@
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+{% assign cachedz = site.time | date: '%M%S' %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="/assets/images/fav1.png" />
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/assets/stylesheets/tv.css?cachedz={{ cachedz }}" />
+
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+{%- include after_body.html -%}
+
+</html>
