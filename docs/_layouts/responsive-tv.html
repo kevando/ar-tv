@@ -5,15 +5,25 @@
 <html>
 
 <head>
-
-    {%- include meta_tags.html -%}
-
-    <link rel="stylesheet" href="/assets/stylesheets/tv.css?cachedz={{ cachedz }}" />
-
+    {%- include head.html -%}
 </head>
 
 <body>
-    {{ content }}
+
+    <div class="player-wrapper">
+        <div id="twitch-embed"></div>
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "arhousetv"
+        });
+    </script>
+
 </body>
 
 {%- include after_body.html -%}

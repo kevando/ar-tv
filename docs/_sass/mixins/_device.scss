@@ -41,3 +41,50 @@
 		@content;
 	}
 }
+
+
+
+
+// // ------ DEVICE TESTING --------
+
+// @include for-phone(landscape) {
+//     body {
+//         background-color: black;
+//     }
+// }
+
+// @include for-phone(portrait) {
+//     body {
+//         background-color: yellow;
+//     }
+// }
+
+// @include for-phone() {
+//     body {
+//         color: green;
+//     }
+// }
+
+// @include for-tablet(landscape) {
+//     body {
+//         background-color: purple;
+//     }
+// }
+
+// @include for-tablet(portrait) {
+//     body {
+//         background-color: green;
+//     }
+// }
+
+// @include for-tablet() {
+//     body {
+//         color: blue;
+//     }
+// }
+
+// @include for-desktop() {
+//     body {
+//         background-color: grey;
+//     }
+// }
