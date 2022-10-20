@@ -1,10 +1,5 @@
 <script type="text/javascript">
 
-    // 
-
-
-
-
     var overlay = document.querySelector('#twitch-embed')
 
     overlay.addEventListener("mouseover", function () {
@@ -24,13 +19,11 @@
         }
         window.removeEventListener('blur', listener);
 
-        document.body.style.padding= "20px";
+        document.body.style.padding= "1px";
 
         mixpanel.track('User Click');
         
     });
-
-
 
 
 </script>
