@@ -1,6 +1,6 @@
 ---
 layout: responsive-tv
 permalink: /
-title: looks fun
+title: AR House 24/7
 ---
 
