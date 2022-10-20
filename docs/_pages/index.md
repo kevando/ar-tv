@@ -1,6 +1,6 @@
 ---
 layout: responsive-tv
 permalink: /
-title: AR TV
+title: looks fun
 ---
 

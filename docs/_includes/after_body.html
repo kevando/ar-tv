@@ -1,0 +1,36 @@
+<script type="text/javascript">
+
+    // 
+
+
+
+
+    var overlay = document.querySelector('#twitch-embed')
+
+    overlay.addEventListener("mouseover", function () {
+        console.log("over")
+    })
+
+    window.onclick = e => {
+        console.log(e.target);  // to get the element
+        console.log(e.target.tagName);  // to get the element tag name alone
+    }
+
+
+    focus();
+    const listener = window.addEventListener('blur', () => {
+        if (document.activeElement === document.querySelector('iframe')) {
+        console.log('clicked on iframe ')
+        }
+        window.removeEventListener('blur', listener);
+
+        document.body.style.padding= "20px";
+
+        mixpanel.track('User Click');
+        
+    });
+
+
+
+
+</script>
