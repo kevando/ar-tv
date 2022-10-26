@@ -1,0 +1,21 @@
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+{% assign cachedz = site.time | date: '%M%S' %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    {%- include head.html -%}
+
+</head>
+
+<body>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+            src="https://player.restream.io/?token=f008b6c811024bdc86daeb8714a7e49d" allow="autoplay" allowfullscreen
+            frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;" /></iframe></div>
+
+</body>
+
+{%- include after_body.html -%}
+
+</html>
