@@ -1,31 +1,31 @@
-body {
-    transition: all 500ms 400ms;
-}
+// body {
+//     transition: all 500ms 400ms;
+// }
 
-body {
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    // border: solid 2px blue;
-}
+// body {
+//     overflow: hidden;
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     // border: solid 2px blue;
+// }
 
-.player-wrapper {
-    // border: solid 1px green;
-    width: 100%;
-    height: 100%;
-}
+// .player-wrapper {
+//     // border: solid 1px green;
+//     width: 100%;
+//     height: 100%;
+// }
 
-#twitch-embed {
-    // border: solid 1px #ed0000;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
+// #twitch-embed {
+//     // border: solid 1px #ed0000;
+//     display: flex;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 7px;
 
-    iframe {
-        height: 100%;
-        width: 100%
-    }
-}
+//     iframe {
+//         height: 100%;
+//         width: 100%
+//     }
+// }
 

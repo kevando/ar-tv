@@ -1,0 +1,56 @@
+{% assign a = page.name | split: '.' %} {% assign page_name = a[0] %}
+{% assign cachedz = site.time | date: '%M%S' %}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    {%- include head.html -%}
+</head>
+
+<body class="fullscreen">
+
+    <div class="static" >
+        <h1 class="center">Stand By</h1>
+    </div>
+
+
+    <div class="player-wrapper">
+        <div id="twitch-embed"></div>
+    </div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+    <script type="text/javascript">
+        var embed = new Twitch.Player("twitch-embed", {
+            channel: "arhousetv",
+            allowfullscreen: true,
+            autoplay: true,
+            muted: false,
+        });
+
+
+
+        embed.addEventListener(Twitch.Embed.VIDEO_PLAY, function () {
+            console.log('The video is playing');
+            document.querySelector(".static").style.display = "none"
+        });
+
+        embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        // var player = embed.getPlayer();
+        // player.setMuted(false);
+      });
+
+    </script>
+
+
+
+    <script type="text/javascript" src="/assets/scripts/artv.js?cachedz={{ cachedz }}"></script>
+</body>
+
+{%- include after_body.html -%}
+
+</html>

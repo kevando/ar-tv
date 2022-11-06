@@ -1,7 +1,0 @@
-/*
-
-keep track of things like cursor speed
-
-taps
-
-*/

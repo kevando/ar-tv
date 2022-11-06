@@ -1,0 +1,70 @@
+body {
+    
+}
+
+
+.static {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-image: url("/assets/images/static-02.gif");
+  }
+  
+  .center  {
+    padding-top: 40vh;
+    font-size: 4rem;
+    text-align: center;
+    font-family: monospace;
+    color: white;
+    font-weight: 100;
+    opacity: 0.4;
+  }
+
+body.fullscreen {
+
+
+    background-color: rgb(62, 62, 62);
+    
+
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    .invisible-overlay {
+        // background-color: red;
+        height: 100%;
+        width:100%;
+
+        border: yellow 1px solid;
+
+        transition: all 300ms 0s;
+
+        &.pointing-down {
+            // @include .static;
+            border-width: 5px;
+        }
+    }
+}
+
+.player-wrapper {
+
+    width: 100%;
+    height: 100%;
+}
+
+#twitch-embed {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+    iframe {
+        height: 100%;
+        width: 100%;
+
+     
+    }
+}
+
