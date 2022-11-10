@@ -4,21 +4,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Basic -->
 <title>{{ page.title }}</title>
-<meta name="description" content="{{ page.description }}" />
+
+<meta content="{{ page.title }}" property="og:title" />
+<meta content="{{ page.title }}" name="twitter:title" />
+
+<meta content="{{ page.description }}" name="description" />
+<meta content="{{ page.description }}" name="twitter:description" />
+<meta content="{{ page.description }}" property="og:description" />
+
 <link rel="icon" type="image/png" href="{{ site.url }}/assets/images/logo-32.png" />
 
 <!-- Open Graph -->
-<meta content="{{ page.description }}" property="og:description" />
-<meta content="{{ page.title }}" property="og:title" />
-<meta property="og:image" content="{{ site.url }}/assets/images/logo-64.png" />
-<meta property="og:image:width" content="64">
-<meta property="og:image:height" content="64">
 
-<!-- Twitter -->
-<meta content="{{ page.title }}" name="twitter:title" />
-<meta content="{{ page.description }}" name="twitter:description" />
+
+<!-- <meta property="og:image" content="{{ site.url }}/assets/images/logo-64.png" /> -->
+<!-- <meta property="og:image:width" content="64"> -->
+<!-- <meta property="og:image:height" content="64"> -->
+
 
 <!-- <meta name="twitter:card" content="{{ page.twitter.card }}" /> -->
 <!-- <meta name="twitter:image" content="{{site.url }}/{{ page.twitter.image }}" /> -->
@@ -26,4 +29,3 @@
 <!-- Other Crap -->
 
 
-<link rel="stylesheet" href="/assets/stylesheets/app.css?cachedz={{ cachedz }}" />
