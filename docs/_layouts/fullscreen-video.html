@@ -13,8 +13,8 @@
 
 <body class="fullscreen">
 
-    <div class="static" >
-        <h1 class="center">Stand By</h1>
+    <div class="static">
+        <h1 id="StatusMessage" class="center"></h1>
     </div>
 
 
@@ -42,9 +42,25 @@
         });
 
         embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-        // var player = embed.getPlayer();
-        // player.setMuted(false);
-      });
+            // var player = embed.getPlayer();
+            // player.setMuted(false);
+        });
+
+
+        const TWITCH_TIMEOUT = 12000; // milliseconds
+
+        setTimeout(() => {
+            document.getElementById("StatusMessage").innerHTML = "pls stand by";
+        }, 1000);
+
+        setTimeout(() => {
+            document.getElementById("StatusMessage").innerHTML = "finding signal";
+        }, 3000);
+
+        setTimeout(() => {
+            document.getElementById("StatusMessage").innerHTML = "NO SIGNAL :(";
+        }, TWITCH_TIMEOUT);
+
 
     </script>
 
